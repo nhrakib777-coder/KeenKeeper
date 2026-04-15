@@ -9,7 +9,7 @@ function FriendCard({ friend }) {
   };
 
   return (
-    <Link to={`/friend/${friend.id}`}>
+   <Link to={`/friend/${friend.id}`}>
 
       <div className="card bg-base-100 min-h-[280px] flex flex-col items-center justify-center shadow p-5 text-center">
 

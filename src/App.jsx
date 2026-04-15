@@ -1,30 +1,24 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import FriendDetails from "./pages/FriendDetails";
 import Timeline from "./pages/Timeline";
 import Stats from "./pages/Stats";
+import FriendDetails from "./pages/FriendDetails";
 import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
 
-      <div className="min-h-screen  container mx-auto px-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/friend/:id" element={<FriendDetails />} />
-          <Route path="/timeline" element={<Timeline />} />
-          <Route path="/stats" element={<Stats />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
-
-      <Footer />
-    </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/timeline" element={<Timeline />} />
+        <Route path="/stats" element={<Stats />} />
+        <Route path="/friend/:id" element={<FriendDetails />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }
 

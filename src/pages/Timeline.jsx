@@ -1,23 +1,26 @@
 import { useContext } from "react";
 import { TimelineContext } from "../context/TimelineContext";
-import TimelineItem from "../components/TimelineItem";
 
 function Timeline() {
 
-  const { timeline } = useContext(TimelineContext);
+  const { interactions } = useContext(TimelineContext);
 
   return (
-    <div>
+    <div className="max-w-4xl mx-auto mt-10">
 
-      <h1 className="text-3xl mb-6">
-        Timeline
-      </h1>
+      <h2 className="text-2xl font-bold mb-6">
+        Interaction Timeline
+      </h2>
 
-      {timeline.map(item => (
-        <TimelineItem
-          key={item.id}
-          item={item}
-        />
+      {interactions.map((item) => (
+        <div key={item.id} className="card bg-base-100 shadow p-4 mb-4">
+          <p>
+            {item.type} with <b>{item.friendName}</b>
+          </p>
+          <p className="text-sm text-gray-500">
+            {item.date}
+          </p>
+        </div>
       ))}
 
     </div>
