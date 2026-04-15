@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Johnson",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "alex.johnson@email.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Kim",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "sarah.kim@email.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["work"],
+    "bio": "Former colleague from marketing.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 3,
+    "name": "Mike Carter",
+    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "email": "mike.carter@email.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym"],
+    "bio": "Gym partner and fitness buddy.",
+    "goal": 14,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 4,
+    "name": "Emma Wilson",
+    "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+    "email": "emma.wilson@email.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["family"],
+    "bio": "Cousin who lives abroad. We talk about travel.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 5,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/men/50.jpg",
+    "email": "david.kim@email.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["work"],
+    "bio": "Software developer friend from hackathon.",
+    "goal": 14,
+    "next_due_date": "2026-04-30"
+  },
+  {
+    "id": 6,
+    "name": "Lisa Nakamura",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "lisa@email.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["travel"],
+    "bio": "Met during a backpacking trip in Japan.",
+    "goal": 14,
+    "next_due_date": "2026-04-12"
+  },
+  {
+    "id": 7,
+    "name": "James Wright",
+    "picture": "https://randomuser.me/api/portraits/men/71.jpg",
+    "email": "james@email.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["hobby", "photography"],
+    "bio": "Photography enthusiast and weekend explorer.",
+    "goal": 14,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 8,
+    "name": "Olivia Brown",
+    "picture": "https://randomuser.me/api/portraits/women/36.jpg",
+    "email": "olivia@email.com",
+    "days_since_contact": 15,
+    "status": "almost due",
+    "tags": ["school"],
+    "bio": "High school friend who loves painting.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 9,
+    "name": "Daniel Martinez",
+    "picture": "https://randomuser.me/api/portraits/men/60.jpg",
+    "email": "daniel@email.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["gaming"],
+    "bio": "Online gaming friend and strategy partner.",
+    "goal": 14,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 10,
+    "name": "Sophia Lee",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "sophia@email.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["music"],
+    "bio": "Met at a music festival. Loves indie bands.",
+    "goal": 14,
+    "next_due_date": "2026-04-29"
+  }
+]
