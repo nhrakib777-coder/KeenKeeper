@@ -100,7 +100,7 @@ function FriendDetails() {
 
           <p className="text-gray-500 mt-3 italic">"{friend.bio}"</p>
 
-          <p className="text-sm text-gray-400">Preferred: email</p>
+          <p className="text-sm text-gray-400">Preferred:  {friend.email}</p>
         </div>
 
         <div className=" flex flex-col ">
