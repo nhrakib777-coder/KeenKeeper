@@ -13,7 +13,7 @@ function Stats() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto mt-10">
+    <div className="max-w-5xl h-screen mx-auto mt-10">
 
       <h1 className="text-3xl mb-6">
         Friendship Analytics

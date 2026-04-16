@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TimelineContext } from "./TimelineContext";
 
 function TimelineProvider({ children }) {
 
-  const [interactions, setInteractions] = useState([]);
+  const [interactions, setInteractions] = useState(() => {
+    const saved = localStorage.getItem("timeline");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("timeline", JSON.stringify(interactions));
+  }, [interactions]);
 
   const addInteraction = (interaction) => {
     setInteractions((prev) => [...prev, interaction]);
