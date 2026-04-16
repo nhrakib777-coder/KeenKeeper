@@ -6,7 +6,7 @@ function Timeline() {
   const { interactions } = useContext(TimelineContext);
 
   return (
-    <div className="max-w-4xl mx-auto mt-10">
+    <div className="max-w-4xl h-screen mx-auto mt-10">
 
       <h2 className="text-2xl font-bold mb-6">
         Interaction Timeline

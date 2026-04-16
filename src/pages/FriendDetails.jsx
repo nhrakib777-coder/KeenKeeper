@@ -33,9 +33,26 @@ function FriendDetails() {
 
     addInteraction(interaction);
 
-    toast.success(
-      `${type.toUpperCase()} interaction added with ${friend.name}`
-    );
+    if (type === "Call") {
+      toast(`📞 Call logged with ${friend.name}`, {
+        position: "top-center",
+        autoClose: 3000,
+      });
+    }
+
+    if (type === "Text") {
+      toast(`💬 Text sent to ${friend.name}`, {
+        position: "top-center",
+        autoClose: 3000,
+      });
+    }
+
+    if (type === "Video") {
+      toast(`📹 Video call with ${friend.name}`, {
+        position: "top-center",
+        autoClose: 3000,
+      });
+    }
   };
 
   if (!friend) {
@@ -86,16 +103,16 @@ function FriendDetails() {
           <p className="text-sm text-gray-400">Preferred: email</p>
         </div>
 
-       <div className=" flex flex-col ">
-         <button className="btn bg-base-100 text-[1rem] text-[#1f2937] text-medium mt-4"><RiNotificationSnoozeLine size={16}/>
-Snooze 2 Weeks</button>
+        <div className=" flex flex-col ">
+          <button className="btn bg-base-100 text-[1rem] text-[#1f2937] text-medium mt-4"><RiNotificationSnoozeLine size={16} />
+            Snooze 2 Weeks</button>
 
-        <button className="btn bg-base-100 text-[1rem] text-[#1f2937] text-medium mt-2"><FiArchive size={16} />
-Archive</button>
+          <button className="btn bg-base-100 text-[1rem] text-[#1f2937] text-medium mt-2"><FiArchive size={16} />
+            Archive</button>
 
-        <button className="btn bg-base-100 text-[1rem] text-[#EF4444] text-medium mt-2"><RiDeleteBinLine size={16} />
-Delete</button>
-       </div>
+          <button className="btn bg-base-100 text-[1rem] text-[#EF4444] text-medium mt-2"><RiDeleteBinLine size={16} />
+            Delete</button>
+        </div>
       </div>
 
       {/* RIGHT SIDE */}
