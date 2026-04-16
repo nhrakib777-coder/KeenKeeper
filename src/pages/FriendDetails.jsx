@@ -72,7 +72,7 @@ function FriendDetails() {
       {/* LEFT PROFILE CARD */}
 
       <div className="card  text-center">
-        <div className="card bg-base-100 py-6 space-y-3">
+        <div className="card bg-base-100 py-6 space-y-3 shadow-md">
           <img
             src={friend.picture}
             className="w-20 h-20 rounded-full mx-auto"
@@ -103,21 +103,21 @@ function FriendDetails() {
           <p className="text-sm text-gray-400">Preferred:  {friend.email}</p>
         </div>
 
-        <div className=" flex flex-col ">
-          <button className="btn bg-base-100 text-[1rem] text-[#1f2937] text-medium mt-4"><RiNotificationSnoozeLine size={16} />
+        <div className=" flex flex-col space-y-2 ">
+          <button className="btn bg-base-100 text-[1rem] text-[#1f2937] text-medium shadow-md mt-4"><RiNotificationSnoozeLine size={16} />
             Snooze 2 Weeks</button>
 
-          <button className="btn bg-base-100 text-[1rem] text-[#1f2937] text-medium mt-2"><FiArchive size={16} />
+          <button className="btn bg-base-100 text-[1rem] text-[#1f2937] text-medium shadow-md mt-2"><FiArchive size={16} />
             Archive</button>
 
-          <button className="btn bg-base-100 text-[1rem] text-[#EF4444] text-medium mt-2"><RiDeleteBinLine size={16} />
+          <button className="btn bg-base-100 text-[1rem] text-[#EF4444] text-medium shadow-md mt-2"><RiDeleteBinLine size={16} />
             Delete</button>
         </div>
       </div>
 
       {/* RIGHT SIDE */}
 
-      <div className="md:col-span-2 space-y-8">
+      <div className="md:col-span-2 space-y-6">
         {/* Stats */}
 
         <div className="grid md:grid-cols-3 gap-4">

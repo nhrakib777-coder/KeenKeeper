@@ -2,13 +2,14 @@ import { useContext, useState } from "react";
 import { TimelineContext } from "../context/TimelineContext";
 import { MdCall, MdMessage } from "react-icons/md";
 import { FaVideo } from "react-icons/fa";
+import EmptyState from "../components/EmptyState";
 
 function Timeline() {
 
   const { interactions } = useContext(TimelineContext);
 
   const [filter, setFilter] = useState("All");
-  const [sortOrder, setSortOrder] = useState("All");
+  const [sortOrder, setSortOrder] = useState("all");
 
   const getIcon = (type) => {
     if (type === "Call") return <MdCall className="text-xl" />;
@@ -31,6 +32,22 @@ function Timeline() {
     sortedTimeline.sort((a, b) => new Date(a.date) - new Date(b.date));
   }
 
+  // Empty State
+  if (interactions.length === 0) {
+    return (
+      <div className="max-w-3xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-6">
+          Timeline
+        </h1>
+
+        <EmptyState
+          title="No interactions yet"
+          message="Start by adding your first call, text, or video."
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-3xl mx-auto p-6">
 
@@ -45,7 +62,7 @@ function Timeline() {
 
           {/* Filter */}
           <select
-            className="select  text-[#64748b] w-[180px] p-2"
+            className="select text-[#64748b] w-[180px] p-2"
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
           >
@@ -57,7 +74,7 @@ function Timeline() {
 
           {/* Sort */}
           <select
-            className="select  text-[#64748b] w-[180px] p-2 "
+            className="select text-[#64748b] w-[180px] p-2"
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
