@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.recharts-wrapper svg:focus,
+.recharts-wrapper path:focus,
+.recharts-wrapper path:active,
+.recharts-wrapper path:hover {
+  outline: none !important;
+  stroke: none !important;
+}

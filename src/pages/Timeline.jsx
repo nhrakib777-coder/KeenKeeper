@@ -45,7 +45,7 @@ function Timeline() {
           <div
             key={item.id}
             className="flex items-center gap-4 p-4 bg-base-100 rounded-lg shadow"
-          >
+          > 
 
             {/* Icon */}
             <div className="text-gray-700">
