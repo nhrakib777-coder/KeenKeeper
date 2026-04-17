@@ -107,17 +107,17 @@ function FriendDetails() {
         {/* ACTION BUTTONS */}
         <div className="flex flex-col space-y-6 mt-4">
 
-          <button className="btn bg-base-100 text-[#1f2937] shadow-md hover:scale-105 transition">
+          <button className="btn bg-base-100 text-[#1f2937] shadow-md hover:scale-105 transition py-6">
             <RiNotificationSnoozeLine size={16} />
             Snooze 2 Weeks
           </button>
 
-          <button className="btn bg-base-100 text-[#1f2937] shadow-md hover:scale-105 transition">
+          <button className="btn bg-base-100 text-[#1f2937] shadow-md hover:scale-105 transition py-6">
             <FiArchive size={16} />
             Archive
           </button>
 
-          <button className="btn bg-base-100 text-[#EF4444] shadow-md hover:scale-105 transition">
+          <button className="btn bg-base-100 text-[#EF4444] shadow-md hover:scale-105 transition py-6">
             <RiDeleteBinLine size={16} />
             Delete
           </button>
