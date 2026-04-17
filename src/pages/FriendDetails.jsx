@@ -65,7 +65,7 @@ function FriendDetails() {
       {/* LEFT PROFILE CARD */}
       <div className="text-center">
 
-        <div className="card bg-base-100 py-6 space-y-3 shadow-md hover:shadow-lg transition-all duration-300">
+        <div className="card bg-base-100 py-6 space-y- shadow-md hover:shadow-lg transition-all duration-300">
 
           <img
             src={friend.picture}
@@ -105,7 +105,7 @@ function FriendDetails() {
         </div>
 
         {/* ACTION BUTTONS */}
-        <div className="flex flex-col space-y-2 mt-4">
+        <div className="flex flex-col space-y-6 mt-4">
 
           <button className="btn bg-base-100 text-[#1f2937] shadow-md hover:scale-105 transition">
             <RiNotificationSnoozeLine size={16} />
@@ -126,7 +126,7 @@ function FriendDetails() {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="md:col-span-2 space-y-6 md:space-y-9">
+      <div className="md:col-span-2 space-y-6 md:space-y-10  lg:space-y-9">
 
         {/* STATS */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

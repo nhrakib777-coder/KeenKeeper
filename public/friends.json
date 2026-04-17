@@ -118,5 +118,29 @@
     "bio": "Met at a music festival. Loves indie bands.",
     "goal": 14,
     "next_due_date": "2026-04-29"
+  },
+  {
+    "id": 11,
+    "name": "Noah Anderson",
+    "picture": "https://randomuser.me/api/portraits/men/25.jpg",
+    "email": "noah.anderson@email.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["college", "coding"],
+    "bio": "University coding club friend.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 12,
+    "name": "Ava Thompson",
+    "picture": "https://randomuser.me/api/portraits/women/28.jpg",
+    "email": "ava.thompson@email.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["art", "friend"],
+    "bio": "Art class friend, loves sketching.",
+    "goal": 14,
+    "next_due_date": "2026-04-21"
   }
 ]
