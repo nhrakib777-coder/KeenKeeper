@@ -77,16 +77,7 @@ It tracks:
 ├── eslint.config.js
 ├── postcss.config.js
 └── dist/                   # Production build
-## Installation
 
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
-    
----
 
 ## ⚙️ Installation & Setup
 
