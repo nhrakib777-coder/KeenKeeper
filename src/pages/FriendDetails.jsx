@@ -117,7 +117,7 @@ function FriendDetails() {
 
       {/* RIGHT SIDE */}
 
-      <div className="md:col-span-2 space-y-6">
+      <div className="md:col-span-2 space-y-8">
         {/* Stats */}
 
         <div className="grid md:grid-cols-3 gap-4">
@@ -132,7 +132,7 @@ function FriendDetails() {
           </div>
 
           <div className="card bg-base-100 shadow p-6 text-center">
-            <h2 className="text-[1.25rem] lg:text-[1.875rem] text-[#244D3F] font-bold">{friend.next_due_date}</h2>
+            <h2 className="text-[1.25rem] lg:text-[1.75rem] text-[#244D3F] font-bold">{friend.next_due_date}</h2>
             <p className="text-[#64748B]">Next Due</p>
           </div>
         </div>

@@ -6,7 +6,7 @@ import EmptyState from "../components/EmptyState";
 
 function Timeline() {
 
-  const { interactions } = useContext(TimelineContext);
+
 
   const [filter, setFilter] = useState("All");
   const [sortOrder, setSortOrder] = useState("all");
@@ -16,7 +16,7 @@ function Timeline() {
     if (type === "Text") return <MdMessage className="text-xl" />;
     if (type === "Video") return <FaVideo className="text-xl" />;
   };
-
+  const { interactions, clearInteractions } = useContext(TimelineContext);
   const filteredTimeline =
     filter === "All"
       ? interactions
@@ -50,13 +50,13 @@ function Timeline() {
 
   return (
     <div className="max-w-3xl mx-auto p-6">
-
+      <h1 className="text-3xl text-[#1f2937] font-bold mb-4">
+        Timeline
+      </h1>
       {/* Title + Controls */}
       <div className="flex justify-between items-center mb-6">
 
-        <h1 className="text-3xl text-[#1f2937] font-bold">
-          Timeline
-        </h1>
+
 
         <div className="flex gap-3">
 
@@ -84,7 +84,15 @@ function Timeline() {
           </select>
 
         </div>
-
+        <button
+          onClick={() => {
+            console.log("clicked");
+            clearInteractions();
+          }}
+          className="btn bg-red-400 hover:bg-red-500 text-white p-4"
+        >
+          Reset History
+        </button>
       </div>
 
       {/* Timeline List */}

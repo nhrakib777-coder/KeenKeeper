@@ -16,8 +16,19 @@ function TimelineProvider({ children }) {
     setInteractions((prev) => [...prev, interaction]);
   };
 
+  const clearInteractions = () => {
+    setInteractions([]);
+    localStorage.removeItem("timeline");
+  };
+
   return (
-    <TimelineContext.Provider value={{ interactions, addInteraction }}>
+    <TimelineContext.Provider
+      value={{
+        interactions,
+        addInteraction,
+        clearInteractions
+      }}
+    >
       {children}
     </TimelineContext.Provider>
   );
